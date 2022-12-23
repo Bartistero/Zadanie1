@@ -43,6 +43,13 @@ jobs:
           key: ${{ runner.os }}-buildx-${{ github.sha }}
           restore-keys: |
             ${{ runner.os }}-buildx-
+            
+       #Logowanie do Dockerhuba
+      - name: Login to DockerHub
+        uses: docker/login-action@v2
+        with:
+          username: ${{secrets.DOCKER_HUB_USERNAME}}
+          password: ${{secrets.DOCKER_HUB_ACCESS_TOKEN}}
           
       - name: Extract metadata (tags, labels) for Docker
         id: meta
@@ -55,8 +62,8 @@ jobs:
         with:
           context: .
           push: true
-          cache-from: type=registry,src=/tmp/.buildx-cache
-          cache-to: type=registry,dest=/tmp/.buildx-cache-new,mode=max
+          cache-from: type=registry,ref=docker.io/bartister99/zadanie1
+          cache-to: type=registry,ref=docker.io/bartister99/zadanie1,mode=max
           platforms: linux/amd64,linux/arm64
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
