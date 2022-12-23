@@ -11,7 +11,7 @@
 * [Kontakt](#contact)
 
 ## Zadanie 1
-W zadaniu pierwszym, użytko pliki skryptu `skrypt.sh`
+W zadaniu pierwszym, użytko pliki skryptu `skrypt.sh`. Algorytm został napisany przy użyciu języka skryptu powłoki bash, przy wykorzystaniu rekurencyjnej funkcji `fib()`. Przedstawione rozwiązanie zostało wybrane ze względu na potrzebe osiągnięcia jak najmniejszego rozmiaru obrazu. Większość języków wymaga kompilacji przez co rozmiar obrazu znacznie się powiększa. Założono, że dla wartości 0, otrzymujemy wynik 0, zaś dla 1 numeru wartość 1. 
 W celu utworzenia repozytorium zdalnego użyto następujących poleceń (gh): 
 
 ![present screenshot](./img/create_commit.jpg)
