@@ -17,8 +17,10 @@
 ## Zadanie 1
 W zadaniu pierwszym, użytko pliki skryptu `skrypt.sh`
 W celu utworzenia repozytorium zdalnego użyto następujących poleceń (gh): 
+
 ![present screenshot](./img/create_commit.jpg)
 Następnie wykonano commit i wypchnięto go do zdalnego repozytorium: 
+
 ![present screenshot](./img/push_repo.jpg)
 ## Zadanie 2
 
