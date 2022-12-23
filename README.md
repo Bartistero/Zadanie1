@@ -16,7 +16,7 @@ W zadaniu pierwszym, użytko pliki skryptu `skrypt.sh`. Algorytm został napisan
 W celu utworzenia repozytorium zdalnego użyto następujących poleceń (gh): 
 
 ![present screenshot](./img/create_repo.jpg)
-Następnie wykonano commit i wypchnięto go do zdalnego repozytorium: 
+Następnie wykonano commit i wypchnięto go do zdalnego repozytorium (użyłem loginu i wygenerowanego tokenu): 
 
 
 ![present screenshot](./img/push_repo.jpg)
