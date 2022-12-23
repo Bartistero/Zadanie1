@@ -5,10 +5,6 @@
 ## Tabela zawartości
 * [Zadanie 1 ](#Zadanie-1)
 * [Zadanie 2](#Zadanie-2)
-    * [Zbudowanie obrazu](#zbudowanie-opracowanego-obrazu-kontenera)
-    * [Uruchomienie kontenera](#uruchomienie-kontenera ) 
-    * [Uzyskanie logów](#uzysaknie-dostępu-do-logów)
-    * [Sprawdzenie warstw](#sprawdzenie-warstw)
 * [Zadanie 4.1](#zadanie-4.1)
 * [Zadanie 4.2](#zadanie-4.2)
 * [Status](#status)
@@ -24,6 +20,23 @@ Następnie wykonano commit i wypchnięto go do zdalnego repozytorium:
 
 ![present screenshot](./img/push_repo.jpg)
 ## Zadanie 2
+W celu zbudowania obrazu należy wydać polecenie: 
+> `docker build -t pierwszy .`
+
+![present screenshot](./img/second_build.jpg)
+
+Obraz wyjściowy ma rozmiar `9.29MB`
+
+![present screenshot](./img/size.jpg)
+
+W celu uruchomienia kontenera należy wydać następujące polecenie: 
+> `docker run --rm -i -t pierwszy /bin/sh`
+
+a następnie wykonać skrypt: 
+> `bash skrypt.sh`
+
+![present screenshot](./img/execute_script.jpg)
+
 
 ## Status
 Project is: finished
