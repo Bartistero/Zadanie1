@@ -20,6 +20,8 @@ Następnie wykonano commit i wypchnięto go do zdalnego repozytorium:
 
 ![present screenshot](./img/push_repo.jpg)
 ## Zadanie 2
+W związku z wykorzystaniem języka skryptowego, nie następuje kompilacja i nie ma dostępu do programu z zewnątrz. Zatem w trakcie uruchamiania konternera należy się do niego "podczepić", aby móc wykonywać instrukcyjne. Potrzebne polecenia zostały przedstawione poniżej. 
+
 W celu zbudowania obrazu należy wydać polecenie: 
 > `docker build -t pierwszy .`
 
