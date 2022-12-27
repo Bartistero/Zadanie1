@@ -53,7 +53,26 @@ W celu wydania wersji należy utworzyć tag w systemie kontroli wersji, a nastep
 
 ![present screenshot](./img/make_tag.jpg)
 
+Po wykonaniu komendy push cashe został wysłany do dockerhuba 
 
+
+![present screenshot](./img/cache.jpg)
+
+Zaś w repozyotium github została utworzony obraz z tagiem wersji 
+
+![present screenshot](./img/first_version_tag.jpg)
+
+Następnie podbijemy wersję do 0.1.1, ostatnia cyfra (PATCH), ponieważ następują nieduże zmiany (generalnie zmiana readme). 
+
+![present screenshot](./img/new_version_tag_git.jpg)
+
+Oraz wykonanie się CI: 
+
+![present screenshot](./img/new_version_tag_CI.jpg)
+
+Oraz jeszcze jedno podbicie wersji do 0.1.2
+
+![present screenshot](./img/finish_version_ci.jpg)
 ## Status
 Project is: finished
 
