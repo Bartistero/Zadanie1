@@ -2,6 +2,7 @@ name: CI
 on:
   push:
     branches: [ master ]
+    #zabezpieczenie dla tagów z gita
     tags:
       - v*
 env:
@@ -10,6 +11,7 @@ env:
 
 jobs:
   buiild:
+    #Wybranie systemu zgodnie z treścią zadania
     runs-on: ubuntu-20.04
     permissions:
       contents: read
@@ -29,6 +31,7 @@ jobs:
       - name: Docker Setup QEMU
         uses: docker/setup-qemu-action@v2
 
+        #Ustawienie etykiet
       - name: Extract metadata (tags, labels) for Docker
         id: meta
         uses: docker/metadata-action@v4
@@ -38,8 +41,6 @@ jobs:
             type=ref,event=branch
             type=ref,event=pr
             type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
-            type=sha
         
         #logowanie do github packages 
       - name: Log in to the Container registry
@@ -65,6 +66,7 @@ jobs:
           username: ${{secrets.DOCKER_HUB_USERNAME}}
           password: ${{secrets.DOCKER_HUB_ACCESS_TOKEN}}
 
+        #Wysyłka obrazu do ghrepo, oraz cache'a do dockerhuba
       - name: Build and push Docker image
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
