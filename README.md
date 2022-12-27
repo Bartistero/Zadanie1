@@ -6,7 +6,7 @@
 * [Zadanie 1 ](#Zadanie-1)
 * [Zadanie 2](#Zadanie-2)
 * [Zadanie 3](#Zadanie-3)
-* [Zadanie 4.2](#zadanie-4.2)
+* [Zadanie 4](#zadanie-4)
 * [Status](#status)
 * [Kontakt](#contact)
 
@@ -73,6 +73,25 @@ Oraz wykonanie się CI:
 Oraz jeszcze jedno podbicie wersji do 0.1.2
 
 ![present screenshot](./img/finish_version_ci.jpg)
+
+## Zadanie 4
+
+W celu sprawdzenia pliku "fib.yml" należy wykonać następujące komendy: 
+
+> `gh workflow view`
+
+![present screenshot](./img/obecnosc_fib.jpg)
+
+Ręczne uruchomienie workflow'a 
+
+> `gh workflow run CI`
+
+![present screenshot](./img/manual_CI.jpg)
+
+Pobranie obrazu z gh repo: 
+
+![present screenshot](./img/downloadI.jpg)
+
 ## Status
 Project is: finished
 
