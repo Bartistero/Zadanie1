@@ -69,16 +69,9 @@ jobs:
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
           context: .
-          push: trueK
+          push: true
           cache-from: type=registry,ref=docker.io/bartister99/zadanie1
           cache-to: type=registry,ref=docker.io/bartister99/zadanie1,mode=max
           platforms: linux/amd64,linux/arm64
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-
-      #Przenies cache'a
-      - name: Move cache
-        run: |
-          rm -rf /tmp/.buildx-cache
-          mv /tmp/.buildx-cache-new /tmp/.buildx-cache
-        
