@@ -1,0 +1,9 @@
+FROM --platform=$BUILDPLATFORM golang:1.17-alpine AS build
+
+LABEL "author"="Bartosz Sterniczuk"
+LABEL "email"="bartosz.sterniczuk@pollub.edu.pl"
+WORKDIR /src
+COPY ./dod_1 /src
+ARG TARGETOS TARGETARCH
+RUN GOOS=$TARGETOS GOARCH=$TARGETARCH go build
+#RUN go build

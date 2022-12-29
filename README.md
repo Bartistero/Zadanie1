@@ -7,6 +7,7 @@
 * [Zadanie 2](#Zadanie-2)
 * [Zadanie 3](#Zadanie-3)
 * [Zadanie 4](#zadanie-4)
+* [Zadanie 5](#zadanie-5)
 * [Status](#status)
 * [Kontakt](#contact)
 
@@ -91,6 +92,9 @@ Ręczne uruchomienie workflow'a
 Pobranie obrazu z gh repo: 
 
 ![present screenshot](./img/downloadI.jpg)
+
+## Zadanie 5
+W celu wykonania zadania dodatkowego wykonałem kolejny skrypt tym razem wymagający kompliacji skrypt.py (w języku python).  
 
 ## Status
 Project is: finished
