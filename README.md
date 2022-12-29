@@ -95,20 +95,20 @@ Pobranie obrazu z gh repo:
 
 ## Zadanie 5
 W celu wykonania zadania dodatkowego wykonałem kolejny skrypt tym razem wymagający kompliacji  go.mod w języku go. 
-Został on oparty o założenia ze skrytpu shelowego. W celu działania apliakcji w jezyku GO należy utworzyć pakiet, 
+Został on oparty o założenia ze skryptu shelowego. W celu działania apliakcji w jezyku GO należy utworzyć pakiet, 
 został on utworzony na komputerze macierzystym. Wszystkie pliki dotyczące tego skryptu znajdują się w folderze 
-"dod_1". W projektowanym pliku dockerfile (Dockerfile_dod1) zostały skopiowany cały folder (dod_1). 
+"dod_1". W projektowanym pliku dockerfile (Dockerfile_dod1) został skopiowany cały folder (dod_1). 
 
 ![present screenshot](./img/Dockerfile_dod1.jpg)
 
 Główną zmianą było dodanie adnotacji "--platform" - jest to autmatycznie zdefiniowana zmienna o zasięgu globalnym, 
-związana z argumentami komiplacji. Podczas budowania obrazu zostanie pobrany obraz odpowiadający zmiennej. Następną zmiana jest 
+związana z argumentami kompilacji. Podczas budowania obrazu zostanie pobrany obraz odpowiadający zmiennej. Następną zmiana jest 
 dodanie wartości GOOS - ustawienie na jaki system operacyjny ma być kompilowana aplikacja. TARGETARCH - na jaką architekturę procesora 
 ma być kompilowana aplikacja. Dzięki zastsowowaniu tych argumentów można przy pomocy jednego dockefila kompilować aplikację na różne systemy i różne architektury.
 
 Dlaczego GO?
-Wydaje mi się, że jest świetnym przykładem aby pokazać budowanie obrazów na różne platofmry. Aplikacja napisana w Javie jest kompilowana i 
-istnieje możliwość jej odpalenie zarówno pod Windowsem jak i Linuxem. Całkiem inaczej jest w GO, tutaj kompilacja następuje pod konkretną platformę.
+Wydaje mi się, że jest świetnym przykładem aby pokazać budowanie obrazów na różne platformy. Aplikacja napisana w Javie jest kompilowana i 
+istnieje możliwość jej odpalenia zarówno pod Windowsem jak i Linuxem. Całkiem inaczej jest w GO, tutaj kompilacja następuje pod konkretną platformę.
 
 ![present screenshot](./img/CI_dod1.jpg)
 Na przedstawionym screenie powyżej widzimy, iż CI przechodzi prawidłowo. 
