@@ -37,7 +37,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ghcr.io/bartistero/zadanie1
+          images: ghcr.io/bartistero/zadanie2
           tags: |
             type=ref,event=branch
             type=ref,event=pr
@@ -74,8 +74,8 @@ jobs:
           context: .
           file: ./Dockerfile_dod1
           push: true
-          cache-from: type=registry,ref=docker.io/bartister99/zadanie1
-          cache-to: type=registry,ref=docker.io/bartister99/zadanie1,mode=max
+          cache-from: type=registry,ref=docker.io/bartister99/zadanie1_dod
+          cache-to: type=registry,ref=docker.io/bartister99/zadanie1_dod,mode=max
           platforms: linux/amd64,linux/arm64
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
